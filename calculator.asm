@@ -1,13 +1,13 @@
-;-------------------------------------------------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------
 ;	CIT - Canadian Institute of Technology
 ;		Course	 	: Compter Architecture and Assembly Language (Microprocessor Systemes)
 ;		Professor	: Dr. Bledar Kazia
 ;		Student	 	: Sajmir Doko
 ;		Project	 	: Build a simple Assembly calculator which performs the four basic calculations by taking the operands from user input. Print the results.
-;-------------------------------------------------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------
 
 ;	Declaring Constants
-;-------------------------------------------------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------
 section .data
 	INVALID_ARGS: db "command should be : ./calculator <operator> <operand1> <operand2>", 0xA
 	INVALID_OPERATOR: db "Invalid Operator", 0xA
@@ -15,7 +15,7 @@ section .data
 	BYTE_BUFFER: times 10 db 0 ; It's just a memory to size 10 , each slot holds the value 0
 
 ;	The actual code
-;-------------------------------------------------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------
 section .text
 
 	global _start
@@ -240,10 +240,10 @@ section .text
 		mov rdi, 0 ; Set rdi to 0 to indicate that there is no error
 		syscall
 
-;-------------------------------------------------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------
 ;	LINKS
 ;		GitHub Project			: https://github.com/sajdoko/AssemblyCalculator
 ;		Assembly Tutorial		:	https://www.tutorialspoint.com/assembly_programming/assembly_quick_guide.htm
 ;		ASCII Table 				: https://bytetool.web.app/en/ascii/
 ;		The Savier :)				:	https://github.com/0xAX/asm
-;-------------------------------------------------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------
