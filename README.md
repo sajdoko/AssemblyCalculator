@@ -10,9 +10,7 @@ A simple calculator written in x86 assembly with support for four main arithmeti
 
 <h2>Usage</h2>
 
----
-
-~$ <code>./calculator \<operator\> \<operand1\> \<operand2\></code>
+<code>./calculator \<operator\> \<operand1\> \<operand2\></code>
 
     ./calculator + 2 6
     8
@@ -25,7 +23,6 @@ A simple calculator written in x86 assembly with support for four main arithmeti
 <br>
 <h2>Compiling</h2>
 
----
 
 First install [NASM](https://github.com/netwide-assembler/nasm "Netwide Assembler")
 
