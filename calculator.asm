@@ -12,7 +12,7 @@ section .data
 	INVALID_ARGS: db "command should be : ./calculator <operator> <operand1> <operand2>", 0xA
 	INVALID_OPERATOR: db "Invalid Operator", 0xA
 	INVALID_OPERAND: db "Invalid Operand", 0XA
-	BYTE_BUFFER: times 10 db 0 ; It's just a memory to size 10 , each slot holds the value 0
+	BYTE_BUFFER: times 10 db 0 ; Memory to size 10, each slot holds 0 as value
 
 ;	The actual code
 ;----------------------------------------------------------------------------------------------------------------------------------
